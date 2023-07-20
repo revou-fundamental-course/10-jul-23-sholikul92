@@ -214,6 +214,7 @@ footer{
     }
 
     section .ctn-left .table{
+        max-width: 75vw;
         padding: 10px;
         border-radius: 5px;
         box-shadow: 1px 2px 3px rgba(0, 0, 0, .7);
