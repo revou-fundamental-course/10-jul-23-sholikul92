@@ -25,6 +25,7 @@ main{
 
 section{
     display: flex;
+    flex-direction: row;
 }
 
 section .ctn-left{
@@ -38,7 +39,9 @@ section .ctn-left p{
 
 section .ctn-left .table{
     background-color: var(--bgColor);
-    padding: 50px;
+    padding: 42px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .7);
 }
 
 section .ctn-left .table tr td{
@@ -72,6 +75,7 @@ section .ctn-left .table button.submit:hover{
 }
 
 section .ctn-left .table button.reset{
+    margin: 5px;
     border: 1px solid grey;
     background-color: white;
 }
@@ -133,6 +137,8 @@ hr{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .7);
 }
 
 .col-hasil h4,h1,h5{
@@ -169,6 +175,8 @@ hr{
     text-align: center;
     padding: 10px;
     background-color: var(--bgColor);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .7);
 }
 
 .row-penyakit .col h4{
@@ -191,4 +199,114 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Responsive */
+@media screen and (max-width:480px){
+    section{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section .ctn-left p{
+        margin-right: 1px;
+        width: 77vw;
+    }
+
+    section .ctn-left .table{
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, .7);
+    }
+
+    section .ctn-left .table tr td{
+        padding: 5px 20px;
+    }
+
+    section .ctn-right{
+        margin-top: 20px;
+    }
+
+    .table .submit{
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+    }
+
+    .table .reset{
+        margin: 5px;
+        width: 80px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+    }
+
+    .row-hasil{
+        flex-direction: column;
+    }
+
+    .col-hasil{
+        max-width: 75vw;
+        margin-bottom: 10px;
+    }
+
+    .col-ket{
+        width: 100%;
+        margin: 0;
+    }
+
+    .row-penyakit .col{
+        padding: 5px;
+        max-width: 75vw;
+    }
+}
+
+@media screen and (max-width:600px){
+    section{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section .ctn-left p{
+        margin-right: 1px;
+        width: 77vw;
+    }
+
+    section .ctn-left .table{
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, .7);
+    }
+
+    section .ctn-left .table tr td{
+        padding: 5px 20px;
+    }
+
+    section .ctn-right{
+        margin-top: 20px;
+    }
+
+    .table .submit{
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+    }
+
+    .table .reset{
+        margin-top: 5px;
+        width: 80px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+    }
+
+    .row-hasil{
+        flex-direction: column;
+    }
+
+    .col-hasil{
+        max-width: 75vw;
+        margin-bottom: 10px;
+    }
+
+    .col-ket{
+        width: 100%;
+        margin: 0;
+    }
+
+    .row-penyakit .col{
+        max-width: 75vw;
+    }
 }
