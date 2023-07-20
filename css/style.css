@@ -1,0 +1,194 @@
+:root{
+    --bgColor: rgb(221, 221, 221);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f5f5f5f3;
+}
+
+header{
+    text-align: center;
+    margin: 50px;
+}
+
+main{
+    margin: 50px;
+}
+
+section{
+    display: flex;
+}
+
+section .ctn-left{
+    margin-right: 20px;
+}
+
+section .ctn-left p{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+section .ctn-left .table{
+    background-color: var(--bgColor);
+    padding: 50px;
+}
+
+section .ctn-left .table tr td{
+    padding: 8px 33px;
+}
+
+section .ctn-left .table tr td .input{
+    height: 25px;
+}
+
+section .ctn-left .table button{
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+section .ctn-left .table button.submit{
+    background-color: rgb(0, 173, 241);
+    border: 1px solid rgb(0, 173, 241);
+}
+
+section .ctn-left .table button.submit a{
+    text-decoration: none;
+    color: white;
+}
+
+section .ctn-left .table button.submit:hover{
+    background-color: rgb(2, 109, 151);
+    border: 1px solid rgb(2, 109, 151);
+    color: white;
+}
+
+section .ctn-left .table button.reset{
+    border: 1px solid grey;
+    background-color: white;
+}
+
+section .ctn-left .table button.reset:hover{
+    border: 1px solid gray;
+    background-color: gray;
+    color: white;
+}
+
+section .ctn-right{
+    margin-left: 20px;
+}
+
+section .ctn-right h3{
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+section .ctn-right ol{
+    margin-left: 17px;
+    margin-bottom: 30px;
+}
+
+section .ctn-right p{
+    text-align: justify;
+}
+
+section .ctn-right #description{
+    margin-bottom: 30px;
+}
+
+hr{
+    margin: 40px 0;
+}
+
+/* Hasil Test BMI */
+.hasilTest{
+    display: flex;
+    flex-direction: column;
+}
+
+.hasilTest h3{
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.row-hasil{
+    display: flex;
+}
+
+.col-hasil{
+    width: 550px;
+    height: 200px;
+    background-color: var(--bgColor);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col-hasil h4,h1,h5{
+    font-weight: 500;
+}
+
+.col-hasil h1{
+    font-size: 30px
+}
+
+.col-ket{
+    width: 50%;
+    margin-left: 60px;
+}
+
+.ket-over h4{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.saran{
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.saran2{
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.row-penyakit .col{
+    margin-top: 10px;
+    width: 550px;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--bgColor);
+}
+
+.row-penyakit .col h4{
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.row-penyakit .col ol li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+footer{
+    background-color: #353535;
+    color: #ddd;
+    text-align: center;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
